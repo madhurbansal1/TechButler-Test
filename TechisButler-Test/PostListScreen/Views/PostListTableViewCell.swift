@@ -8,6 +8,7 @@
 import UIKit
 
 class PostListTableViewCell: UITableViewCell {
+    @IBOutlet weak var idLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -36,9 +37,13 @@ class PostListTableViewCell: UITableViewCell {
         titleLabel.textColor = .black
         titleLabel.font = .systemFont(ofSize: 16, weight: .semibold)
         titleLabel.numberOfLines = 0
+        idLabel.textColor = .black
+        idLabel.font = .systemFont(ofSize: 16, weight: .semibold)
+        idLabel.numberOfLines = 0
     }
     
     func configure(data: Post) {
+        idLabel.text = data.id?.stringValue ?? ""
         titleLabel.text = data.title?.stringValue ?? ""
     }
 }
