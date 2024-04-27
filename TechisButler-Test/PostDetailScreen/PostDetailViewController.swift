@@ -19,6 +19,7 @@ class PostDetailViewController: UIViewController {
     }
     
     private func setUp() {
+        title = "Post Details"
         titleLabel.textColor = .black
         titleLabel.font = .systemFont(ofSize: 16, weight: .semibold)
         titleLabel.numberOfLines = 0

@@ -21,6 +21,7 @@ class PostListViewController: UIViewController {
     }
 
     private func setUp() {
+        title = "Posts"
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(PostListTableViewCell.nib, forCellReuseIdentifier: PostListTableViewCell.identifier)
