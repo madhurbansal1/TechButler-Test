@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Loader" customModule="Sentor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zfa-Hh-Dwf">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="GAI-IN-06Z">
+                            <rect key="frame" x="176.66666666666666" y="403.66666666666669" width="37" height="37"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="GAI-IN-06Z" firstAttribute="centerX" secondItem="Zfa-Hh-Dwf" secondAttribute="centerX" id="BbP-Xz-VfF"/>
+                        <constraint firstItem="GAI-IN-06Z" firstAttribute="centerY" secondItem="Zfa-Hh-Dwf" secondAttribute="centerY" id="wTw-eB-ysc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Zfa-Hh-Dwf" secondAttribute="bottom" id="FOQ-1i-uvI"/>
+                <constraint firstItem="Zfa-Hh-Dwf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Pne-yA-XaF"/>
+                <constraint firstItem="Zfa-Hh-Dwf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fgR-Hi-0Fo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zfa-Hh-Dwf" secondAttribute="trailing" id="gKr-9c-oeX"/>
+            </constraints>
+            <connections>
+                <outlet property="activityIndicator" destination="GAI-IN-06Z" id="cWY-3V-EQM"/>
+                <outlet property="backgroundView" destination="Zfa-Hh-Dwf" id="JYP-O5-mBm"/>
+            </connections>
+            <point key="canvasLocation" x="-69" y="-122"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
